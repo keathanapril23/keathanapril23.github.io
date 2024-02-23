@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+p
+{
+    font-weight: 300;
+    color: #111;
+}
+body
+{
+    min-height: 1000px;
+}
+.banner
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(batch_21601125.jpg);
+    background-size: cover;
+}
+.banner .content
+{
+    max-width: 900px;
+    text-align: center;
+}
+.banner .content h2
+{
+    font-size: 5em;
+    color: gold;
+}
+.banner .content p
+{
+    font-size: 1em;
+    font-weight: 400;
+    color: #111;
+}
+.btn
+{
+    font-size: 1em;
+    color:#fff;
+    background: gold;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+.btn:hover
+{
+    letter-spacing: 6px;
+}
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+header.sticky
+{
+    background: #000;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+header .logo
+{
+    color: #000;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+header.sticky .logo
+{
+    color: gold;
+}
+header .logo span
+{
+    color: #000;
+}
+header .navigation
+{
+    position: relative;
+    display: flex;
+}
+header .navigation li
+{
+    list-style: none;
+    margin-left: 30px;
+}
+header .navigation li a 
+{
+    text-decoration: none;
+    color: #000;
+    font-weight: 300;
+}
+header.sticky .navigation li a 
+{
+    color: gold;
+}
+header .navigation li a:hover 
+{
+    color: #fff;
+}
+section
+{
+    padding: 100px;
+}
+.about
+{
+    background: url(batch_21601125.jpg);
+    background-size: cover;
+}
+.row
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.row .col150
+{
+    position: relative;
+    width: 48%;
+}
+.titleText
+{
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+}
+.titleText span
+{
+    color: gold;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+.row .col150 .imgBx
+{
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+}
+.row .col150 .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.title
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.service
+{
+    background: url(batch_21601125.jpg);
+    background-size: cover;
+}
+.service .content
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.service .content .box
+{
+    width: 340px;
+    margin: 20px;
+    background: gold;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.08);
+}
+.service .content .box .imgBx
+{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.service .content .box .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.service .content .box .text
+{
+    padding: 15px 0 5px;
+}
+.service .content .box .text h3
+{
+    font-weight: 400;
+    color: #333;
+}
+.staff
+{
+    background: url(batch_21601125.jpg);
+    background-size: cover;
+}
+.staff .content
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+.staff .content .box
+{
+    width: 250px;
+    margin: 15px;
+}
+.staff .content .box .imgBx
+{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.staff .content .box .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 15px solid #fff;
+}
+.staff .content .box .text
+{
+    padding: 15px 0 5px;
+    border: 15px solid #fff;
+    background: gold;
+}
+.staff .content .box .text h1
+{
+    text-align: center;
+    justify-content: center;
+    font-style: italic;
+    font-weight: 400;
+    color: #111;
+}
+.profile
+{
+    background: url(batch_21601125.jpg);
+    background-size: cover;
+}
+.profile .content
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+.profile .content .box
+{
+    width: 340px;
+    margin: 20px;
+    padding: 40px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.profile .content .box .imgBx
+{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profile .content .box .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profile .content .box .text
+{
+    text-align: center;
+}
+.profile .content .box .text p
+{
+    color: #666;
+    font-style: italic;
+}
+.profile .content .box .text h3
+{
+    margin-top: 20px;
+    color: #111;
+    font-size: 1em;
+    color: gold;
+    font-weight: 600;
+}
+.copyrightText
+{
+    padding: 8px 40px;
+    background: url(batch_21601125.jpg);
+    background-size: cover;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    text-align: center;
+}
+.copyrightText p
+{
+    color: #333;
+}
+.copyrightText a
+{
+    color: gold;
+    font-style: italic;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+@media (max-width: 991px)
+{
+    header,
+    header.sticky{
+        padding: 10px 20px;
+    }
+    header .navigation
+    {
+        display: none;
+    }
+    header .navigation.active
+    {
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #000;
+    }
+    header .navigation li 
+    {
+        margin-left: 0;
+    }
+    header .navigation li a 
+    {
+        color: #fff;
+        font-size: 1.6em;
+    }
+    .menuToggle
+    {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .menuToggle.active
+    {
+        background: url(close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    section {
+        padding: 20px;
+    }
+    .banner .content h2 {
+        font-size: 3em;
+        color: gold;
+    }
+    .row 
+    {
+        flex-direction: column;
+    }
+    .row .col150 
+    {
+        position: relative;
+        width: 100%;
+    }
+    .row .col150 .imgBx 
+    {
+        height: 300px;
+        margin-top: 20px;
+    }
+    .service .content 
+    {
+        margin-top: 20px;
+    }   
+    .service .content .box 
+    {
+        margin: 10px;
+    } 
+    .service .content .box .imgBx 
+    {
+        height: 260px;
+    }
+    .title 
+    {
+        text-align: center;
+    }
+    .titleText
+    {
+        font-size: 1.8em;
+        line-height: 1.5em;
+        margin-bottom: 15px;
+        font-weight: 300;
+    }
+    .profile .content .box 
+    {
+        margin: 10px;
+        padding: 20px;
+    }
+    .contactForm img 
+    {
+        width: 200px;
+    }
+    .contactForm {
+        padding: 35px 40px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 480px)
+{
+ .banner .content h2 
+   {
+     font-size: 2.2em;
+     color: gold;
+   }
+}
